@@ -9,5 +9,9 @@
 ###> symfony/web-server-bundle ###
 /.web-server-pid
 ###< symfony/web-server-bundle ###
+
 # ignore phpStorm config files
 .idea/
+
+# DS_Store
+.DS_Store
