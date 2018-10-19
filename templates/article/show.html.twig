@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read {{ title }}{% endblock %}
+
+{% block body %}
+
+<h1>{{ title }}</h1>
+
+<div>
+    <p>Bacon ipsum dolor amet shoulder porchetta salami sausage, jowl pork loin meatloaf landjaeger chuck andouille short loin spare ribs tongue pancetta. Doner andouille sirloin tail, boudin beef ribs pork belly shoulder pancetta kevin kielbasa. Shoulder prosciutto doner, swine flank pastrami sausage strip steak chuck jowl beef tail ham hock pork loin. Pork loin sirloin fatback jerky brisket tenderloin shankle pork porchetta rump. Chuck meatloaf ham ball tip short loin prosciutto picanha jowl brisket shankle biltong tail. Spare ribs short loin porchetta, t-bone alcatra jowl pig landjaeger turkey burgdoggen corned beef leberkas beef ribs jerky shankle.</p>
+</div>
+
+<h2>Comments ({{ comments|length }})</h2>
+<ul>
+    {%  for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
